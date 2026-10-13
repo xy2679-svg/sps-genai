@@ -6,7 +6,7 @@ COPY . .
 
 RUN pip install --no-cache-dir uv
 
-RUN uv sync --frozen
+RUN uv sync
 
 RUN uv run python -m spacy download en_core_web_lg
 
